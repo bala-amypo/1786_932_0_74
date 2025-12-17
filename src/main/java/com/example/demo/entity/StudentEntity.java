@@ -31,7 +31,7 @@ public class StudentEntity {
     }
 
     public String getName(String name){
-        return name;
+        return this.name;
     }
 
     public void setEmail(String email){
@@ -39,7 +39,7 @@ public class StudentEntity {
     }
 
     public String getEmail(String email){
-        return email;
+        return this.email;
     }
 
     public void setCgpa(float cgpa){
@@ -47,6 +47,6 @@ public class StudentEntity {
     }
 
     public float getCgpa(float cgpa){
-        return cgpa;
+        return this.cgpa;
     }
 }
