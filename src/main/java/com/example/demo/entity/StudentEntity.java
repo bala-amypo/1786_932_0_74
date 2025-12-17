@@ -14,6 +14,17 @@ public class StudentEntity {
     private String name;
     private String email;
     private float cgpa;
+
+    public StudentEntity(Long id, String name,String email,float cgpa){
+        this.id=id;
+        this.name=name;
+        this.email=email;
+        this.cgpa=cpga;
+    }
+
+    public StudentEntity(){
+        
+    }
     
     public void setName(String name){
         this.name=name;
@@ -35,7 +46,7 @@ public class StudentEntity {
         this.cgpa=cgpa;
     }
 
-    public float getName(String name){
-        return this.name;
+    public float getCgpa(float cgpa){
+        return this.cgpa;
     }
 }
