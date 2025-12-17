@@ -4,6 +4,9 @@ import jakarta.persistence.Entity;
 
 @Entity
 public class StudentEntity {
+
+    @id
+    @GeneratedValue(strategy = GeneratedValue.IDENTITY)
     private Long id;
     private String name;
     private String email;
