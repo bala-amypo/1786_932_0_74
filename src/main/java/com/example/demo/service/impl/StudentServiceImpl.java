@@ -20,7 +20,10 @@ public class StudentServiceImpl implements StudentService {
     @Transactional
     public StudentEntity addStudents(StudentEntity student) {
         repo.save(student);
-        if(student.getDepartment().equals())
+        if(student.getDepartment().equals("CSE")){
+            throw new ResourceNotFoundException(msg:"Error........")
+        }
+        return student;
     }
 
     @Override
