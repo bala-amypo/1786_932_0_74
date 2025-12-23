@@ -4,6 +4,7 @@ import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import com.example.demo.entity.StudentEntity;
 import com.example.demo.repository.StudentRepository;
@@ -16,6 +17,7 @@ public class StudentServiceImpl implements StudentService {
     StudentRepository repo;
 
     @Override
+    
     public StudentEntity addStudents(StudentEntity student) {
         return repo.save(student);
     }
